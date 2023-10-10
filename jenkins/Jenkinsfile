@@ -41,7 +41,12 @@ pipeline {
                 }
             }
         }
-        stage('Complete') {
+        stage('Delivered') {
+            steps {
+                echo 'Delivered'
+            }
+        }
+         stage('Complete') {
             steps {
                 echo 'complete'
             }
